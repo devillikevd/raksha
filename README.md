@@ -1,161 +1,209 @@
-# RAKSHA रक्षा — Women Safety Command System v3.2
+# 🛡 RAKSHA रक्षा ──── WOMEN SAFETY COMMAND SYSTEM
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│ RAKSHA CORE SYSTEM v3.2.0 [STATUS: NOMINAL (ONLINE)]                     │
+│ OPERATING SYSTEM: CYBER-EMERGENCY OS (CLIENT/SERVER)                     │
+│ DEPLOYMENT COORDINATES: CENTRAL MESH BROADCAST                           │
+│ SECURE PROTOCOLS: WEBSOCKET / SHIELD-AES-256 / SHA-256 PROOF             │
+└──────────────────────────────────────────────────────────────────────────┘
+```
 
-<div align="center">
+An AI-Powered Futuristic Emergency Operating System and Command Console designed to provide immediate protection, real-time telemetry, and hands-free crisis containment for women. 
 
-### 🛡 An AI-Powered Futuristic Emergency Operating System for Women's Safety
-**Real-Time Decentralized Guardian Network, Auto-Capture Evidence Locker, & Tactical Navigation**
+---
 
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
-[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=nodedotjs)](https://nodejs.org)
-[![Three.js](https://img.shields.io/badge/Three.js-0.184-000000?style=for-the-badge&logo=threedotjs)](https://threejs.org)
-[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel)](https://vercel.com)
-[![Render Deployment](https://img.shields.io/badge/Render-Deployed-46E3B7?style=for-the-badge&logo=render)](https://render.com)
+### 🌐 Live Infrastructure Telemetry
 
-</div>
+| Service Node | Deployment Host | Status Badge | Live Access Link |
+| :--- | :--- | :--- | :--- |
+| **RAKSHA Frontend client** | Vercel Static CDN | [![Vercel Deployment](https://img.shields.io/badge/Vercel-Operational-00D9FF?style=flat-square&logo=vercel&logoColor=00D9FF)](https://vercel.com) | [Open Live Client Console ↗](https://raksha-devillikevd.vercel.app) |
+| **RAKSHA Backend Orchestration** | Render Web Engine | [![Render Deployment](https://img.shields.io/badge/Render-Operational-46E3B7?style=flat-square&logo=render&logoColor=46E3B7)](https://render.com) | [Inspect Node Core API ↗](https://raksha-backend.onrender.com) |
+| **API Health Check** | core-engine-ping | [![Health nominal](https://img.shields.io/badge/API-Nominal-22C55E?style=flat-square)](https://raksha-backend.onrender.com/api/health) | [Check Server Heartbeat ↗](https://raksha-backend.onrender.com/api/health) |
+| **Global Status Page** | status-monitor | [![All Nominal](https://img.shields.io/badge/Status-All_Nominal-22C55E?style=flat-square&logo=statuspage)](https://status.render.com/) | [Render Infrastructure Status ↗](https://status.render.com/) |
+| **Source Repository** | GitHub | [![GitHub Repo](https://img.shields.io/badge/GitHub-raksha-white?style=flat-square&logo=github)](https://github.com/devillikevd/raksha) | [Explore GitHub Repository ↗](https://github.com/devillikevd/raksha) |
 
 ---
 
 ## 🗺 System Architecture
 
-RAKSHA operates on a highly decoupled **Cinematic Frontend Client** linked via a secure WebSocket connection to an **Autonomous Node/Express Backend Orchestration Engine**.
+RAKSHA operates on a fully decoupled **WebGL Cinematic Frontend** linked via continuous bidirectional WebSocket streams to an **Express/Socket.io backend orchestration core**.
 
 ```mermaid
 graph TD
-  A[React v19 SPA] -->|WebSocket Connection| B[Node.js Core Backend]
-  A -->|Camera getUserMedia| C[Auto-Capture Overlay]
-  A -->|Web Speech API| D[Keyword Voice Trigger]
-  B -->|Broadcasting Mesh| E[Socket.io Nearby Guardians]
-  B -->|Evidence Signature| F[AWS S3/Signed Locker Proof]
-  B -->|Twilio Gateway| G[SMS Alert Contacts]
+  subgraph Frontend SPA Client [React 19 Cyber Console]
+    A[Vite Static Asset Bundle] --> B[Zustand Local State Engine]
+    B -->|Event Dispatcher| C[Camera & Video Recording API]
+    B -->|Web Speech API| D[Real-time Voice Trigger Engine]
+    B -->|GSAP Scroll/Three.js Grid| E[Interactive 3D WebGL Globe]
+  end
+
+  subgraph Backend Core Server [Node.js Web Server]
+    F[Express API Gateway] -->|Cors / Helmet Security| G[Active Emergency Registry]
+    H[Socket.io Stream Coordinator] -->|Active GPS Telemetry| G
+  end
+
+  subgraph Cloud Providers [Decentralized Integrity Node]
+    C -->|Secure Media Stream| F
+    G -->|Broadcasting Pipeline| I[Nearby Guardian Mesh Networks]
+    G -->|SMS Alert Trigger| J[Twilio API Endpoint]
+  end
+
+  B <-->|Bidirectional WebSockets| H
+  B -->|REST Telemetry Payloads| F
 ```
 
 ---
 
-## 🚀 Key Features
+## 🖥 Command Interface Modules
 
-### 🆘 Emergency SOS with Auto-Capture
-- **One-Touch Trigger**: 3-second custom countdown interface.
-- **📸 Auto-Capture Sequence**: Automatically fires the camera to capture **5 sequential photos** with active GPS latitude, longitude, and timestamps stamped directly on the canvas as legal proof.
-- **📹 Video Evidence Locker**: Records a **15-second high-fidelity video clip** (user configurable mode) with synchronized audio.
-- Sends evidence data directly to configured contacts.
-
-### 🧠 AI Guardian Console & Telemetry Chat (`AIGuardianChat`)
-- **Interactive Chat Interface**: Ask security telemetry, scan sector coordinates, request decoy scripts, or call silent local backup.
-- **Predictive Risk Assessment**: Computes live sector index values and highlights patrol warnings.
-
-### 🗣 Working Web Speech AI Voice Processing (`VoiceCommandSection`)
-- **Real Speech Recognition**: Links to standard browser speech processing APIs to process spoken keywords.
-- **Silent Trigger matching**: Recognizes terms like *help*, *emergency*, *police*, or *bachao* to automatically launch the camera auto-capture sequence hands-free.
-
-### 📞 Fake Call Decoy Protocol (`FakeCallSection`)
-- **6 Realistic Caller Profiles** (Mom, Boss, Police, Husband, Friend, Office).
-- **Delayed Trigger (0s, 5s, 10s, 30s, 60s)**: Stash your phone naturally before the decoy call rings.
-- Hyper-realistic mobile phone simulator with connected duration timers and audio waveforms.
+| Module Identifier | Security Rating | Functional Description | Telemetry / Event Vector |
+| :--- | :--- | :--- | :--- |
+| **🆘 Emergency SOS Auto-Capture** | `MAXIMUM` | Initiates 3s count. Captures 5 Canvas-stamped GPS photo frames/15s video. | `window.dispatchEvent(CustomEvent)` |
+| **🧠 AI Guardian Console** | `HIGH` | Interactive chat query for route safety index values, telemetry data and decoy scripts. | `AIGuardianChat.jsx` local inference |
+| **🗣 Voice Command Trigger** | `MAXIMUM` | Real-time browser speech translation mapping to crisis terms (`help`, `emergency`, `police`). | `webkitSpeechRecognition` Engine |
+| **📞 Decoy Call Simulator** | `MEDIUM` | Hyper-realistic mobile phone dialer UI with timer triggers and audio waveforms. | Delayed custom trigger queue |
+| **🚶 Safe Walk Escort** | `HIGH` | Path optimizer highlighting illuminated main roads (96% safety) vs. shortcuts (34% safety). | Route comparison simulation matrix |
+| **🗃 TAMPER-PROOF EVIDENCE** | `CRITICAL` | Secure locker showing capture timestamps, GPS coordinates, and mock SHA-256 hashes. | `/api/evidence/upload` |
+| **🛡 Community Mesh** | `HIGH` | Distributed coordinates map tracking adjacent emergency beacons and local guardians. | `Socket.io` broadcast mesh |
+| **📊 Terminal Settings** | `NOMINAL` | Toggles for debug modes, notification relays, audio playback, and sensor calibrations. | `/src/stores/emergencyStore.js` |
 
 ---
 
-## ⚡ Deployment Tutorials
+## 📦 Deployment Blueprints
 
-### 1. Frontend Deployment on Vercel
-The frontend is built as a static Vite Single Page App. We have included an advanced **`vercel.json`** file that handles permission policies (allowing Camera, Mic, Geolocation) and SPA routing.
+### ⚡ Frontend Hosting (Vercel)
+The React client is built as a static Single Page Application (SPA). The repository contains `vercel.json` pre-configured to handle SPA redirects and set strict permissions policies allowing access to the camera, microphone, and geolocation API.
 
-#### Option A: Deploy via Vercel Web Dashboard (Recommended)
-1. Push your code to your GitHub Repository: `https://github.com/devillikevd/raksha`.
-2. Open the **[Vercel Dashboard](https://vercel.com)**.
-3. Click **Add New** -> **Project**.
-4. Import your `raksha` repository.
-5. In the Build Configuration:
-   - **Framework Preset**: `Vite`
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-6. Click **Deploy**. Vercel will automatically parse the `vercel.json` file in your root folder.
+```json
+{
+  "version": 2,
+  "cleanUrls": true,
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
+```
 
-#### Option B: Deploy via Vercel CLI
+> [!IMPORTANT]
+> **Vercel Dashboard Deployment Steps:**
+> 1. Visit the **[Vercel Dashboard](https://vercel.com/)** and click **Add New > Project**.
+> 2. Import the GitHub Repository: `https://github.com/devillikevd/raksha`.
+> 3. Vercel automatically detects Vite framework. Ensure the build command is `npm run build` and output directory is `dist`.
+> 4. Click **Deploy**. Vercel will automatically configure permissions and route rules via your `vercel.json`.
+
+---
+
+### 🛡 Backend hosting (Render)
+The Node/Socket.io backend runs continuously. We manage and provision the services using a `render.yaml` Infrastructure-as-Code (IaC) configuration.
+
+```yaml
+services:
+  # RAKSHA Backend Node/Socket.io service
+  - type: web
+    name: raksha-backend
+    env: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+
+  # RAKSHA Static Frontend service
+  - type: web
+    name: raksha-frontend
+    runtime: static
+    staticPublishPath: dist
+    buildCommand: npm install && npm run build
+```
+
+> [!TIP]
+> **Render Blueprint Deployment Steps:**
+> 1. Open the **[Render Dashboard](https://dashboard.render.com/)**.
+> 2. Click **New > Blueprint**.
+> 3. Connect your GitHub repository: `https://github.com/devillikevd/raksha`.
+> 4. Render will parse your `render.yaml` automatically, discover both the `raksha-backend` web service and `raksha-frontend` static site, and deploy them together instantly for free!
+
+---
+
+## 🔌 API & Event Specifications
+
+### REST Telemetry Gateways
+
+```
+POST /api/sos/trigger
+Content-Type: application/json
+
+{
+  "userId": "usr_99x2",
+  "name": "Aradhya Sen",
+  "latitude": 19.0760,
+  "longitude": 72.8777,
+  "contacts": [
+    { "name": "Mom", "phone": "+9198XXXXXXXX" }
+  ]
+}
+```
+
+| HTTP Method | API Path | Payload / Parameter | System Response |
+| :--- | :--- | :--- | :--- |
+| `GET` | `/api/health` | None | `{ status: "nominal", uptime: 102.3 }` |
+| `POST` | `/api/sos/trigger` | Telemetry Coordinate Body | `{ success: true, message: "SOS Broadcast initiated." }` |
+| `POST` | `/api/evidence/upload` | Base64 Media + Metadata | `{ success: true, evidence: { id: "ev-01", hash: "sha256-x" } }` |
+| `POST` | `/api/sos/resolve` | `{ userId: "usr_99x2" }` | `{ success: true, message: "Emergency resolved." }` |
+| `GET` | `/api/incidents` | None | `Array<IncidentObject>` (Active feeds) |
+
+### WebSocket Network Broadcasts
+
+| Event Channel | Communication Direction | Payload Data | Trigger Node |
+| :--- | :--- | :--- | :--- |
+| `raksha-gps-stream` | **Client ──> Server** | `{ userId, latitude, longitude }` | Sends active GPS stream |
+| `raksha-emergency-broadcast` | **Server ──> All Clients** | `{ userId, name, latitude, longitude }` | Alerts nearby guardians |
+| `raksha-gps-delta` | **Server ──> All Clients** | `{ userId, latitude, longitude }` | Updates tracking coordinate pins |
+| `raksha-evidence-updated` | **Server ──> All Clients** | `{ userId, evidence: Array<Items> }` | Broadcasts evidence locker updates |
+| `raksha-emergency-resolved` | **Server ──> All Clients** | `{ userId, timestamp }` | Cleans up active emergency overlays |
+
+---
+
+## ⚡ Quick-Start Local Terminal Setup
+
+### Frontend Dashboard Client
 ```bash
-# Install Vercel CLI globally
-npm install -g vercel
+# Clone the repository
+git clone https://github.com/devillikevd/raksha.git
+cd raksha
 
-# Run vercel deploy in workspace root
-vercel --prod
+# Install dependency files
+npm install
+
+# Spin up Vite local server
+npm run dev
 ```
 
----
+### Telemetry Backend Engine
+```bash
+# Navigate to backend directory
+cd server
 
-### 2. Backend Deployment on Render
-The RAKSHA Node/Express backend coordinates Socket.io coordinate feeds and API payloads. We have included a **`render.yaml`** Infrastructure-as-Code file to deploy seamlessly.
+# Create configuration environment file
+echo "PORT=5000\nNODE_ENV=development" > .env
 
-#### Option A: Blueprints Deployment (Recommended)
-1. Go to your **[Render Dashboard](https://dashboard.render.com)**.
-2. Click **New** -> **Blueprint**.
-3. Link your GitHub repository.
-4. Render will parse the **`render.yaml`** file and provision the resources automatically!
+# Install dependency files
+npm install
 
-#### Option B: Manual Web Service Setup
-1. In Render Dashboard, click **New** -> **Web Service**.
-2. Link your GitHub repository.
-3. Configure the Web Service:
-   - **Name**: `raksha-backend`
-   - **Environment**: `Node`
-   - **Root Directory**: `server`
-   - **Build Command**: `npm install`
-   - **Start Command**: `npm start`
-   - **Plan**: `Free`
-4. In Advanced Settings, add the Environment Variables:
-   - `PORT`: `10000`
-   - `NODE_ENV`: `production`
-5. Click **Create Web Service**.
-
----
-
-## 🛡 Environment Configuration
-
-Create a `.env` file inside the `/server` directory:
-
-```env
-PORT=10000
-NODE_ENV=production
-# Twilio credentials (optional backend triggers)
-TWILIO_ACCOUNT_SID=your_sid_here
-TWILIO_AUTH_TOKEN=your_token_here
-TWILIO_PHONE_NUMBER=+1XXXXXXXXXX
+# Start Express & Socket.io server
+npm start
 ```
-
----
-
-## 🛠 API & WebSockets Event Schema
-
-### REST Endpoints (Backend)
-
-| Method | Endpoint | Description | Payload |
-|--------|----------|-------------|---------|
-| `GET` | `/api/health` | System health check | N/A |
-| `POST` | `/api/sos/trigger` | Broadcasts emergency | `{ userId, name, latitude, longitude, contacts }` |
-| `POST` | `/api/evidence/upload` | Logs photo/video evidence | `{ userId, base64Data, type }` |
-| `GET` | `/api/incidents` | Lists active alert feeds | N/A |
-
-### Socket.io Real-time Streams
-
-| Event Name | Type | Payload | Description |
-|------------|------|---------|-------------|
-| `raksha-gps-stream` | **Emit** | `{ userId, latitude, longitude }` | Sends active user coordinates |
-| `raksha-emergency-broadcast` | **Broadcast** | `{ userId, name, latitude, longitude }` | Alerts nearby guardians |
-| `raksha-gps-delta` | **Broadcast** | `{ userId, latitude, longitude }` | Updates active tracker marker |
-
----
-
-## 🎨 Technology Stack
-
-- **Client**: React 19, Vite, Zustand, Tailwind CSS v4.
-- **Cinematics**: GSAP (Timeline Scrolling), Framer Motion, Three.js (3D globe background), HTML Canvas.
-- **Microphone & Media**: MediaRecorder API, getUserMedia API, webkitSpeechRecognition API.
-- **Backend Infrastructure**: Node.js, Express, Socket.io, Helmet Security middlewares.
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for RAKSHA Women Safety Initiatives**
-
+**Built with ❤️ for RAKSHA Women Safety Initiatives**  
 *RAKSHA — Intelligent, immediate protection when it matters most.*
 
 </div>
