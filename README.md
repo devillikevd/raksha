@@ -24,7 +24,7 @@ An AI-Powered Futuristic Emergency Operating System and Tactical HUD designed to
 
 | System Node | Target Provider | Operational Status | Access Gateway |
 | :--- | :--- | :--- | :--- |
-| **Client UI Console** | Vercel Static Edge | ![Vercel Active](https://img.shields.io/badge/Vercel-Nominal_Active-00D9FF?style=flat-square&logo=vercel&logoColor=00D9FF) | [Launch Web Console ↗](https://raksha-devillikevd.vercel.app) |
+| **Client UI Console** | Vercel Static Edge | ![Vercel Active](https://img.shields.io/badge/Vercel-Nominal_Active-00D9FF?style=flat-square&logo=vercel&logoColor=00D9FF) | [Launch Web Console ↗](https://raksha-two.vercel.app) |
 | **Command Engine API** | Render Cloud Engine | ![Render Active](https://img.shields.io/badge/Render-Online_Nominal-46E3B7?style=flat-square&logo=render&logoColor=46E3B7) | [Core Backend Endpoint ↗](https://raksha-backend.onrender.com) |
 | **API Health Ping** | Heartbeat daemon | ![Nominal](https://img.shields.io/badge/Ping-12ms_Healthy-22C55E?style=flat-square) | [Fetch Endpoint Health ↗](https://raksha-backend.onrender.com/api/health) |
 | **System Uptime** | Global Status | ![Uptime 99](https://img.shields.io/badge/Uptime-99.97%25-22C55E?style=flat-square) | [Render Status Dashboard ↗](https://status.render.com/) |
@@ -103,16 +103,22 @@ Click on any component path to explore its codebase directly in the repository:
 
 | Component Path | Functionality | UI Design |
 | :--- | :--- | :--- |
+| [LoadingScreen.jsx](src/components/sections/LoadingScreen.jsx) | Pre-boot system check sequencer | Matrix console loading logs & calibration screens |
 | [LandingSection.jsx](src/components/sections/LandingSection.jsx) | Futuristic cyber-mesh landing banner | Particle grid background & intro animations |
+| [HeroSection.jsx](src/components/sections/HeroSection.jsx) | Tactical system dashboard entrypoint | Holographic HUD titles & diagnostic overlays |
 | [SOSSection.jsx](src/components/sections/SOSSection.jsx) | Command SOS triggers, real-time tracking panel | Cyber-pulsing buttons & alarm system overlays |
 | [AIGuardianSection.jsx](src/components/sections/AIGuardianSection.jsx) | Interactive chat console for route assessment | Floating HUD panels & simulated typing layouts |
 | [VoiceCommandSection.jsx](src/components/sections/VoiceCommandSection.jsx) | Speech-to-text analyzer and listener | Pulsing microphone level visualizers |
 | [ThreatHeatmapSection.jsx](src/components/sections/ThreatHeatmapSection.jsx) | Spatial distribution of incident rates | Interactive heat grids and danger index levels |
+| [MapSection.jsx](src/components/sections/MapSection.jsx) | Live location tracker & surveillance sweep | Maharashtra grid markers & sweep radial overlay |
 | [SafeWalkSection.jsx](src/components/sections/SafeWalkSection.jsx) | Route illumination & lighting optimization | Visual comparative routing dashboards |
 | [FakeCallSection.jsx](src/components/sections/FakeCallSection.jsx) | Simulation caller interface with timers | Dynamic wave canvas & customizable dial states |
 | [EvidenceLockerSection.jsx](src/components/sections/EvidenceLockerSection.jsx) | Secure storage system for auto-capture outputs | Encrypted file lists, timestamps & sha256 checksums |
 | [CommunityShieldSection.jsx](src/components/sections/CommunityShieldSection.jsx) | Local network grid showing adjacent users | Active tracking pins & status tables |
+| [DashboardSection.jsx](src/components/sections/DashboardSection.jsx) | Real-time security telemetry graphs | Animated counters & Radial system metrics |
 | [SettingsTerminalSection.jsx](src/components/sections/SettingsTerminalSection.jsx) | Debug, sound output & telemetry settings | Matrix command shell input emulator |
+| [TestimonialsSection.jsx](src/components/sections/TestimonialsSection.jsx) | User validation & impact reports carousel | Slider panels & testimonial cards layout |
+| [TechStackSection.jsx](src/components/sections/TechStackSection.jsx) | System architecture integration grid | 3D holographic tilt nodes & specs cards |
 
 </details>
 
@@ -138,6 +144,7 @@ Click on any component path to explore its codebase directly in the repository:
 | [Globe.jsx](src/components/three/Globe.jsx) | Interactive earth representing client nodes | Outer atmosphere glowing shader, wireframes |
 | [SOSSphere.jsx](src/components/three/SOSSphere.jsx) | Holographic pulsing sphere at emergency spots | Distorted fragment shaders, custom scale animations |
 | [ParticleField.jsx](src/components/three/ParticleField.jsx) | Floating ambient dust grid | Blended points, randomized float positions |
+| [GridPlane.jsx](src/components/three/GridPlane.jsx) | Digital coordinate grid floor | Infinite wireframe horizontal plane |
 
 </details>
 
