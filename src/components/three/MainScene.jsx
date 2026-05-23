@@ -26,6 +26,7 @@ function CameraRig() {
 
 function SceneContent() {
   const isEmergency = useEmergencyStore(s => s.isEmergency)
+  const performanceMode = useEmergencyStore(s => s.performanceMode)
   const globeRef = useRef()
 
   useFrame((state) => {
@@ -46,7 +47,7 @@ function SceneContent() {
       
       <fog attach="fog" args={[isEmergency ? '#1a0505' : '#060F1A', 10, 50]} />
 
-      <ParticleField count={400} emergency={isEmergency} />
+      <ParticleField count={performanceMode ? 100 : 400} emergency={isEmergency} />
       <GridPlane emergency={isEmergency} />
       
       <group ref={globeRef} position={[0, 0, -5]}>
@@ -57,30 +58,34 @@ function SceneContent() {
         <SOSSphere emergency={isEmergency} />
       </group>
 
-      <EffectComposer>
-        <Bloom
-          intensity={isEmergency ? 2.5 : 1.5}
-          luminanceThreshold={0.2}
-          luminanceSmoothing={0.9}
-          mipmapBlur
-        />
-        <ChromaticAberration
-          blendFunction={BlendFunction.NORMAL}
-          offset={new THREE.Vector2(isEmergency ? 0.003 : 0.0008, isEmergency ? 0.003 : 0.0008)}
-        />
-        <Vignette darkness={0.7} offset={0.3} />
-      </EffectComposer>
+      {!performanceMode && (
+        <EffectComposer>
+          <Bloom
+            intensity={isEmergency ? 2.5 : 1.5}
+            luminanceThreshold={0.2}
+            luminanceSmoothing={0.9}
+            mipmapBlur
+          />
+          <ChromaticAberration
+            blendFunction={BlendFunction.NORMAL}
+            offset={new THREE.Vector2(isEmergency ? 0.003 : 0.0008, isEmergency ? 0.003 : 0.0008)}
+          />
+          <Vignette darkness={0.7} offset={0.3} />
+        </EffectComposer>
+      )}
     </>
   )
 }
 
 export default function MainScene() {
+  const performanceMode = useEmergencyStore(s => s.performanceMode)
+
   return (
     <div className="fixed inset-0 z-0" id="main-3d-scene">
       <Canvas
         camera={{ position: [0, 1, 8], fov: 60 }}
-        gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
-        dpr={[1, 1.5]}
+        gl={{ antialias: !performanceMode, alpha: true, powerPreference: 'high-performance' }}
+        dpr={performanceMode ? 1 : [1, 1.5]}
       >
         <CameraRig />
         <SceneContent />
