@@ -123,6 +123,9 @@ export const useEmergencyStore = create((set, get) => ({
     set(state => ({ capturedPhotos: [...state.capturedPhotos, photoData] }))
   },
 
+  performanceMode: false,
+  togglePerformanceMode: () => set(state => ({ performanceMode: !state.performanceMode })),
+
   resetSOS: () => {
     set({ 
       isEmergency: false, sosCountdown: null, alertPhase: 'idle',
