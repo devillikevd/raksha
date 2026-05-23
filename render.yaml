@@ -14,10 +14,8 @@ services:
         value: production
 
   # RAKSHA Static Frontend service
-  - type: web
+  - type: static
     name: raksha-frontend
-    env: static
-    plan: free
     publishDir: dist
     buildCommand: npm install && npm run build
     headers:
