@@ -2,7 +2,7 @@ services:
   # RAKSHA Backend Node/Socket.io service
   - type: web
     name: raksha-backend
-    env: node
+    runtime: node
     plan: free
     rootDir: server
     buildCommand: npm install
